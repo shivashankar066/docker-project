@@ -2,7 +2,7 @@
 The aim of this project to analyze the bank customer's demographics and financial information 
 which inculdes customer's age, gender. country, credit score, balance and many others to predict whether the customer will leave the bank or not.
 
-## Dockerization 
+## Dockerization
 
 In this project, I used docker image and container.
 
@@ -36,6 +36,7 @@ If you want to stop the container in the background (detached mode), you can run
 docker-compose down
 
 
+<<<<<<< HEAD
  ## Docker Hub to push docker Images
 
 Step 1: Login into your docker hub and username: shivashankarrampur
@@ -58,3 +59,6 @@ docker push your-dockerhub-username/repository-name
 
 EX: docker push shivashankarrampur/bank_customer_churn_prediction 
 
+=======
+for Reference: https://docs.docker.com/
+>>>>>>> 1583737ce9585422636316d10941c239ff016d4a
