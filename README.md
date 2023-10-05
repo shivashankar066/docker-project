@@ -34,3 +34,6 @@ Step 4: To stop the Docker container (and the Django development server), press 
 where the container is running.
 If you want to stop the container in the background (detached mode), you can run:
 docker-compose down
+
+
+for Reference: https://docs.docker.com/
