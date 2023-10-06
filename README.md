@@ -2,7 +2,7 @@
 The aim of this project to analyze the bank customer's demographics and financial information 
 which inculdes customer's age, gender. country, credit score, balance and many others to predict whether the customer will leave the bank or not.
 
-## Dockerization
+## Dockerization (docker-compose)
 
 In this project, I used docker image and container.
 
@@ -35,7 +35,15 @@ where the container is running.
 If you want to stop the container in the background (detached mode), you can run:
 docker-compose down
 
+## Dockerization (docker-file)
 
+Step 1: Create a docker file(as written everything in docker file) in same working directory
+
+Step 2: docker build -t ml_model_image .
+
+Step 3: docker run -p 8000:8000 ml_model_image
+
+Step 4: Run url in Postman: http://localhost:8000/churn_prediction/ 
 
  ## Docker Hub to push docker Images
 
@@ -49,8 +57,7 @@ username, and repository-name with the name you want for your repository on Dock
 
 docker tag your-image-name your-dockerhub-username/repository-name
 
-EX: docker tag churn_prediction-web shivashankarrampur/bank_customer_
-churn_prediction
+EX: docker tag churn_prediction-web shivashankarrampur/bank_customer_churn_prediction
 
 Step 3 : Push Your Docker Image: Once you have tagged your Docker image, 
 you can push it to Docker Hub using the docker push command:
@@ -62,3 +69,5 @@ EX: docker push shivashankarrampur/bank_customer_churn_prediction
 
 for Reference: https://docs.docker.com/
 
+Note: 1.Dockerfile is mandetory.
+      2. You can run django api either using docker-file cmds or docker-compose cmds
