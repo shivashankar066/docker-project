@@ -66,6 +66,16 @@ docker push your-dockerhub-username/repository-name
 
 EX: docker push shivashankarrampur/bank_customer_churn_prediction 
 
+ ## Pull image from Docker Hub and Run it local Machine
+
+Step 1: Login into your docker hub and username: shivashankarrampur
+        (https://hub.docker.com)
+Step 2: Go to requires imges anc click on pull cmd and copy it.
+Step 3: Run it in your local command as shown below:
+   Ex: docker pull shivashankarrampur/bank_customer_churn_prediction
+Step 4: Run docker Images as show below:
+  Ex: docker run -d -p 8000:8000 shivashankarrampur/bank_customer_churn_prediction:latest
+Step 5: Run your url in your browser.
 
 for Reference: https://docs.docker.com/
 
